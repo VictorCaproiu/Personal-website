@@ -1,0 +1,118 @@
+body{
+    background-image: url('img\\Background.jpg');
+    background-repeat: repeat;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    text-indent: 10%;
+}
+
+.HeaderMain{
+    background-color: #0D98BA;
+    font-family: 'Courier New', Courier, monospace;
+    justify-content: space-between;
+}
+
+.HeaderNav{
+    background-color: aquamarine;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    font-size: larger;
+    background-color: white;
+}
+
+.w3-container{
+    margin-left: 20px;
+    margin-right: 20px;
+    width: auto;
+    height: auto;
+}
+
+.w3-container-img{
+    display: flex;
+    justify-content: center;  /* div-ul care contine poza cardului*/
+    vertical-align: middle;
+}
+
+.cardImg{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    border-radius: 8px;
+}
+
+.container-blue{
+    background-color: #0D98BA;
+    padding: 12px;
+    margin-right: 10px;
+}
+
+.card{
+    border: 3px solid black;
+    width: 60%;
+    padding: 10px;
+    margin: 15px;
+    background-color: antiquewhite;  /* Pt fiecare din cele 3 carduri din Home */
+    display: flex;
+    min-width: 700px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.card-contact{
+    border: 3px solid black;
+    max-width: 260px;
+    padding: 10px;
+    margin: 15px;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    border-start-start-radius: 50px;
+    border-end-end-radius: 50px;
+
+}
+
+.content{
+    padding: 10px;
+    display: flex;            /* Continutul principal din Home*/
+    flex-direction: column;
+}
+
+.active{
+    padding-right: 10%; /* Butoanele din nav */
+}
+
+footer{
+    display: flex;
+    background-color: white;
+    padding: 20px;
+}
+
+.footImg{
+    height: 30px;  /* Pentru linkurile cu poza din footer */
+    width: 30px;
+}
+
+.footEl{
+    margin: 10px;
+}
+
+
+.aboutPara{
+    padding-left: 5px;  /* Paragrafele din sectiunea About*/
+    padding-right: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+@media only screen and (max-width: 620px) {
+    /* For mobile phones: */
+    .card{
+      width: 100%;                            /* Cand ecranul e prea mic, cardurile iau latimea lui*/
+    }
+}
