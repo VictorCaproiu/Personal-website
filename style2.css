@@ -14,9 +14,7 @@ body{
     left: 20px;
     bottom: 20px;
 }
-#mir_t{
-    color: white;
+p{
+    color: white;  
 }
-#gray_t{
-    color: white;
-}
+

@@ -18,6 +18,10 @@ p{
     text-indent: 10%;
 }
 
+li{
+    padding-top: 5px;
+}
+
 .HeaderMain{
     background-color: #0D98BA;
     font-family: 'Courier New', Courier, monospace;
@@ -33,14 +37,14 @@ p{
     background-color: white;
 }
 
-.w3-container{
+.container{
     margin-left: 20px;
     margin-right: 20px;
     width: auto;
     height: auto;
 }
 
-.w3-container-img{
+.container-img{
     display: flex;
     justify-content: center;  /* div-ul care contine poza cardului*/
     vertical-align: middle;
@@ -66,9 +70,16 @@ p{
     margin: 15px;
     background-color: antiquewhite;  /* Pt fiecare din cele 3 carduri din Home */
     display: flex;
-    min-width: 700px;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
+@media only screen and (max-width: 768px) {
+    .card{
+        width: 100%;
+        margin: 10px 0 10px 0;
+        align-self: normal;
+    }
+}
+
 
 .card-contact{
     border: 3px solid black;
@@ -93,12 +104,6 @@ p{
     padding-right: 10%; /* Butoanele din nav */
 }
 
-footer{
-    display: flex;
-    background-color: white;
-    padding: 20px;
-}
-
 .footImg{
     height: 30px;  /* Pentru linkurile cu poza din footer */
     width: 30px;
@@ -116,14 +121,14 @@ footer{
     margin-right: 5px;
 }
 
-/* For mobile phones: */
-/* Cand ecranul e prea mic, cardurile iau latimea lui*/
-
-/*
-@media only screen and (max-width: 620px) {
-    
-    .card{
-        width: 100%;     
+@media only screen and (max-width: 768px){
+    #w3-containter-img{
+        display: none;
     }
 }
-*/
+
+footer{
+    display: flex;
+    background-color: white;
+    padding: 20px;
+}
