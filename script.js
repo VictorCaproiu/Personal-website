@@ -72,7 +72,7 @@ function mirrorImg() {
     ctx.putImageData(imageData, 0, 0);
     var stop = Date.now();
     var num = stop-start;
-    mirrorTimer.innerHTML = "Timpul de oglindire este: " + num + " ms";
+    mirrorTimer.innerHTML = "Mirror time: " + num + " ms";
 }
 
 function greyscaleImg(){
@@ -96,7 +96,7 @@ function greyscaleImg(){
 
     var stop = Date.now();
     var num = stop-start;
-    grayTimer.innerHTML= "Timpul de procesare alb/negru este: " + num + " ms";
+    grayTimer.innerHTML= "Grayscale time: " + num + " ms";
 }
 
 async function start() {
